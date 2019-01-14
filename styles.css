@@ -1,0 +1,155 @@
+/*------------ COLOR PALLETE ------------*/
+/*  left side background color:         #455A64 */
+/*  right side background color:        #CFD8DC */
+/*  Linked List text-color:             #fff    */
+/*  Enter Btn Color                     #FFC107 */
+/*  Enter Btn Color on hover:           #FFD773 */
+/*  Card border color:                  #607D8B */
+/*  Line within card color:             #CFD8DC */
+/*  Card Title text-color:              #455A64 */
+/*  URL display text color:             #607D8B */
+/*  URL dislplay on hover:              #455A64 */
+/*  URL underline Color:                #F2F4F4 */
+/*  URL underline on hover:             #FFC107 */
+/*  READ/Delete text color:             #455A64 */
+/*  Has been Read color:                #F05A28 */
+/*  Card background-color when read:    #F2F4F4 */
+
+
+/*------------ WHOLE PAGE ------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #CFD8DC;
+}
+
+input,
+button:focus {
+  outline: none;
+}
+
+/*------------ LEFT SIDE ------------*/
+
+.list {
+  display: grid;
+  justify-content: center;
+  margin: 40px 0;
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+
+.enter-btn {
+  display: flex;
+  color: #fff;
+  background: #FFC107;
+  font-weight: 800;
+}
+
+.enter-btn:hover {
+  background: #FFD773; 
+}
+
+.left-side {
+  background: #455A64;
+ /* height: 100vh;*/
+  padding: 20px 20px 20px 20px;
+}
+
+.title {
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+}
+
+.link-icon {
+  width: 50px;
+  margin: 0 5px;
+}
+
+/*------------ BOOKMARKS/RIGHT SIDE ------------*/
+
+h3 {
+  margin: 0px;
+}
+
+.bookmark-card {
+  border: solid 2px #607D8B;
+  background: #fff;
+  padding: 5px 10px;
+  margin: 20px;
+}
+
+.web-title {
+  color:  #455A64;
+  padding-bottom: 10px;
+  border-bottom:  solid  2px #CFD8DC;
+}
+
+.web-link {
+  border-bottom: solid 1px #F2F4F4;
+  color: #607D8B;
+  font-weight: 100;
+}
+
+.web-link:hover {
+  border-bottom: solid 1px #FFC107; 
+  color:#455A64;
+  padding-bottom: -2px;
+}
+
+.card-bottom {
+  border-top: solid  2px #CFD8DC;
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.read-delete {
+  border-bottom: solid 1px #F2F4F4;
+  font-weight: 400;
+  color: #455A64;
+  padding: 3px 0;
+  margin: 2px 0;
+ 
+}
+
+.read-delete:hover {
+  border-bottom: solid 1px #FFC107;
+  font-weight: 800;
+  padding: 0;
+}
+
+.read {
+
+}
+
+/*------------ RESPONSIVE ------------*/
+
+@media screen and (min-width: 768px) {
+ body {
+  display: flex;
+ }
+
+ .column {
+  width: 50%;
+ }
+
+.left-side {
+  background: #455A64;
+  height: 100vh;
+  padding: 200px 10px 200px 10px;
+ }
+
+}
+
+
+
+
+
+
+
+
